@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang=“ja”>
+
+<head>
+    <meta charset=“utf-8”> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Battery_Finder_Program</title>
+
+    <!-- bootstrap/css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <div class="d-flex flex-column align-items-center bg-light ">
+        <div class="bg-primary col-12">
+            <h2 class="text-center text-white">Battery Finder Program</h2>
+        </div>
+        <div class="col-10">
+            <div class="my-3">
+                <p class="my-0 font-weight-bold">Step1: Select your brand</p>
+                <select id="step1" class="px-2 py-1 rounded border border-secondary">
+                </select>
+            </div>
+            <div class="my-3">
+                <p class="my-0 font-weight-bold">Step2: Select your model</p>
+                <select id="step2" class="px-2 py-1 rounded border border-secondary">
+                </select>
+            </div>
+            <div class="my-3">
+                <p class="my-0 font-weight-bold">Step3: Input accessory power cunsumption</p>
+                <input id="step3" type="number" value="55" min="0" max="100" step="1" class="w-rem4 pl-2  py-1 rounded border border-secondary"> W
+            </div>
+            <div class="my-3">
+                <p class="my-0 font-weight-bold">Step4: Choose your battery</p>
+                <div id="choosedBattery">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/battery_finder_program.js"></script>
+</body>
+
+</html>
